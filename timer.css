@@ -270,6 +270,72 @@ body{
 
 }
 
+.timer-buttons button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.open-btn{
+
+    display:block;
+
+    width:220px;
+
+    margin:30px auto 0;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.open-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+.time-input{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin:20px 0;
+}
+
+.time-input input{
+    width:65px;
+    height:45px;
+    border:2px solid #4F46E5;
+    border-radius:10px;
+    text-align:center;
+    font-size:18px;
+    outline:none;
+}
+
+.time-input span{
+    font-size:24px;
+    font-weight:bold;
+}
+
+#customDisplay{
+    font-size:42px;
+    font-weight:700;
+    margin:20px 0;
+    color:#4F46E5;
+}
+
 .custom-timer{
     width:420px;
     margin:40px auto;
@@ -294,31 +360,75 @@ body{
 }
 
 .time-input input{
-    width:70px;
-    padding:10px;
-    font-size:20px;
+    width:78px;
+    height:58px;
+
+    border:2px solid #2563EB;
+    border-radius:14px;
+
     text-align:center;
-    border:2px solid #2b4eff;
-    border-radius:8px;
+
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+
+    color:#2563EB;
+    background:#F8FAFF;
+
+    outline:none;
+    transition:.3s;
+}
+
+.time-input input:focus{
+    border-color:#1D4ED8;
+    box-shadow:0 0 12px rgba(37,99,235,.25);
 }
 
 #customDisplay{
     font-size:55px;
-    margin:20px 0;
-    color:#333;
+    font-weight:700;
+    color:#2b4eff;
+    margin:20px 0 30px;
+    text-align:center;
+}
+
+/* Custom Timer Buttons */
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
 }
 
 .buttons button{
-    padding:10px 18px;
-    margin:5px;
+    padding:12px 28px;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
     cursor:pointer;
-    background:#2b4eff;
     color:white;
+    font-weight:600;
     font-size:16px;
+    transition:.3s;
 }
 
 .buttons button:hover{
-    background:#1737c7;
+    transform:translateY(-3px);
+}
+
+/* Warna sama macam Pomodoro */
+.buttons button:nth-child(1){
+    background:#22C55E;   /* Start */
+}
+
+.buttons button:nth-child(2){
+    background:#F59E0B;   /* Pause */
+}
+
+.buttons button:nth-child(3){
+    background:#2563EB;   /* Resume */
+}
+
+.buttons button:nth-child(4){
+    background:#EF4444;   /* Reset */
 }
