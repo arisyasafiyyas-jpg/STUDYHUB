@@ -67,53 +67,6 @@
     font-size:15px;
 }
 
-/* =====================================
-   MAIN
-===================================== */
-
-.main{
-
-    margin-left:250px;
-
-    padding:40px;
-
-}
-
-.header{
-
-    margin-bottom:35px;
-
-}
-
-.header h1{
-
-    font-size:34px;
-
-}
-
-.header p{
-
-    color:#64748B;
-    margin-top:8px;
-
-}
-
-/* =====================================
-   TOP SECTION
-===================================== */
-
-.top-section{
-
-    display:grid;
-
-    grid-template-columns:2fr 1fr;
-
-    gap:25px;
-
-    margin-bottom:40px;
-
-}
-
 
 /* ==========================
    RESET
@@ -133,11 +86,21 @@ body{
 /* ==========================
    CONTAINER
 ========================== */
-
 .container{
-    width:90%;
-    max-width:900px;
-    margin:40px auto;
+    margin-left:250px;      /* ruang untuk sidebar */
+    padding:40px;
+}
+
+header,
+.progress-section,
+.task-form,
+.task-list,
+.action-buttons,
+footer{
+    width:100%;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /* ==========================
@@ -442,4 +405,22 @@ header h1{
     font-size:30px;
 }
 
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.main{
+    margin-left:0;
+    width:100%;
+    padding:20px;
+}
+
+}
+
+.progress-section,
+.task-form,
+.task-list{
+    width:100%;
 }
